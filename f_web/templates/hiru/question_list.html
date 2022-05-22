@@ -1,7 +1,8 @@
 {% if question_list %}
     <ul>
     {% for question in question_list %}
-        <li><a href="{% url 'hiru:detail' question.id %}">{{ question.subject }}</a></li> <!--질문출력 테스트-->
+        <li><a href="{% url 'hiru:detail' question.id %}">{{ question.subject }}</a></li>
+        <!--질문출력 테스트 네임스페이스 적용-->
     {% endfor %}
     </ul>
 {% else %}
