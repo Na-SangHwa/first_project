@@ -1,3 +1,6 @@
+<!-- 부트스트랩 적용 -->
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}">
 {% if question_list %}
     <ul>
     {% for question in question_list %}
