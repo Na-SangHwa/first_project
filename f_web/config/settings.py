@@ -118,6 +118,10 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+STATICFILES_DIRS = [ # 스타일시트 파일 저장위치
+    BASE_DIR / 'static',
+]
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
